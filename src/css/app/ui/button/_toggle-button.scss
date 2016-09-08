@@ -1,0 +1,36 @@
+.toggle.button.component {
+	$track-width : 28px;
+	$ball-width : 10px;
+	height: 14px;
+	background-color: $shark;
+	border-radius: 20px;
+	padding: 0;	
+	display: block;
+	width: $track-width;
+	position: relative;
+	border: 1px solid $shark;
+	transition: all 0.15s ease;
+	
+	.ball {
+		border-radius: 100%;
+		background-color: white;
+		width: $ball-width;
+		height: $ball-width;
+		display: block;
+		position: absolute;
+		top: 1px;
+		left: 1px;
+		transition: all 0.15s ease;
+	}
+	
+	// Inactive state.
+	&:not(.active) {
+		background-color: $french-gray;
+		border-color: $french-gray;
+		
+		.ball {
+			left: ( $track-width - $ball-width ) - 3px;
+		}
+		
+	}
+}

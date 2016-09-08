@@ -1,0 +1,56 @@
+.content-type-select-item.component {
+	display: flex;
+	height: 86px;
+	transition: background-color 0.15s linear;
+	cursor: pointer;
+	
+	.icon {
+		width: 80px;
+		background-size: auto 30px; // Spec says 50 but that's not quite always right.
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	
+	&.page .icon {
+		background-image: url('../img/page.svg');
+	}
+	
+	&.gallery .icon {
+		background-image: url('../img/gallery.svg');
+		background-size: auto 40px;
+	}
+	
+	&.link .icon {
+		background-image: url('../img/link.svg');
+		background-size: auto 40px;
+	}
+	
+	.meta {
+		flex: 1;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	
+	.name {
+		font-size: 16px;
+		font-weight: 500;
+		margin: auto 0 7px 0;
+		width: 100%;
+		color: $mine-shaft--light;
+	}
+	
+	.description {
+		margin: 0;
+		font-size: 13px;
+		font-weight: 500;
+		width: 100%;
+		margin: 0 0 auto 0;
+		color: $dusty-gray;
+	}
+	
+	&:hover {
+		background-color: $white-sand;
+	}
+	
+}

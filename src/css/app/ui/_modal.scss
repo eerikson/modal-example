@@ -1,0 +1,49 @@
+.modal.component {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	.modal-content {
+		background-color: white;
+		min-height: 250px;
+		width: 500px;
+		transition: all 0.6s 0.2s $easing--fast-start;
+		position: relative;
+		border-radius: 5px;
+		box-shadow: 0 0 10px rgba(0,0,0,0.5);
+		box-sizing: border-box;
+		padding: 30px;
+		
+	}
+	
+	.overlay-bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background-color: rgba(0,0,0,0.5);
+		transition: background-color 0.15s linear;
+		transform: translateZ(0);
+		
+	}
+	
+	
+	// Initial animation state. 
+	&:not(.animate-in) {
+		
+		.overlay-bg {
+			background-color: rgba(0,0,0,0);
+		}
+		
+		.modal-content {
+			opacity: 0;
+			transform: translate3d( 0, 10%, 0 );
+		}
+	}
+}

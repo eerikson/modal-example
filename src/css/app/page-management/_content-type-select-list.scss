@@ -1,0 +1,11 @@
+.content-type-select-list.component {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	border: 1px solid $gallery;
+	border-radius: 3px;
+	
+	li:not(:first-child) {
+		border-top: 1px solid $gallery;
+	}
+}

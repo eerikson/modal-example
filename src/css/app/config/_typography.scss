@@ -1,0 +1,11 @@
+$Helvetica                          : "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+h1, h2, h3, h4, h5, h6, p, span, input, button {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: geometricPrecision;
+}
+
+html, body {
+	font-family: $Helvetica;
+	color: $mine-shaft;
+}

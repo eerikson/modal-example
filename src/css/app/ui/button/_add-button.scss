@@ -1,0 +1,14 @@
+.add.button.component {
+	background-color: transparent;
+	padding: 0;
+	color: $denim;
+	display: block;
+	font-weight: 500;
+	font-size: 14px;
+	
+	transition: color 0.15s linear;
+	
+	&:hover {
+		color: darken($denim, 9);
+	}
+}

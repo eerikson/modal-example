@@ -1,0 +1,9 @@
+.confirm.button.component {
+	background-color: $denim;
+	transition: background-color 0.15s linear;
+	color: white;
+	
+	&:hover {
+		background-color: darken( $denim, 5 );
+	}
+}

@@ -1,0 +1,38 @@
+.content-list.component {
+	padding: 0 0 0 0;
+	margin: 0;
+	list-style: none;
+	border: 1px solid $gallery;
+	border-radius: 3px;
+	max-height: 420px;
+	overflow: auto;
+
+	li {
+		padding: 0;
+		margin: 0;
+		border-top: 1px solid $gallery;
+		
+		li,
+		&:first-child {
+			border-top: none;
+		}
+	}
+	
+	& > li .primary {
+		padding-right: 15px;
+	}
+	
+	
+	
+	li li {
+		margin-top: 8px;
+		
+		&:first-child {
+			margin-top: 16px;
+		}
+		
+		&:last-child {
+			margin-bottom: 16px;
+		}
+	}
+}

@@ -1,0 +1,25 @@
+.button.component {
+	appearance: none;
+	border: none;
+	
+	box-sizing: border-box;
+	line-height: 1;
+	padding: 10px 15px;
+	font-size: 13px;
+	font-weight: 500;
+	border-radius: 3px;
+	cursor: pointer;
+	color: $dusty-gray;
+	background-color: transparent;
+	
+	// Icon stuff
+	background-size: 8px auto;
+	background-repeat: no-repeat;
+	background-position: left center;
+	
+	&:focus {
+		outline: 0;
+	}
+	
+
+}

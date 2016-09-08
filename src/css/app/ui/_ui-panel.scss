@@ -1,0 +1,22 @@
+.ui-panel.component {
+	box-sizing: border-box;
+	
+	.header {
+		display: flex;	
+		margin-bottom: 30px;
+	}
+	
+	.heading {
+		font-size: 20px;
+		margin: 0;
+		font-weight: 500;
+	}
+	
+	.inner-cell {
+		background-color: $alabaster;
+		border: 1px solid $gallery;
+		border-radius: 3px;
+		min-height: 100px;
+	}
+	
+}

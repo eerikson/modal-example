@@ -1,0 +1,49 @@
+.add-new-page.component {
+	
+	.icon {
+		background-size: auto 100%;
+		background-image: url('../img/page.svg');
+		background-repeat: no-repeat;
+		height: 50px;
+		background-position: center;
+		margin: 80px auto 17px auto;
+	}
+	
+	.page-type {
+		font-weight: 500;
+		font-size: 16px;
+		text-align: center;
+		color: $mine-shaft--light;
+		margin: 0 auto 30px;
+	}
+	
+	.title-input {
+		font-family: inherit;
+		font-size: 13px;
+		padding: 8px 10px;
+		box-sizing: border-box;
+		border-radius: 3px;
+		appearance: none;
+		border: 1px solid lighten( $silver, 5 );
+		background-color: white;
+		margin-bottom: 10px;
+		
+		&::placeholder {
+			color: $silver;
+		}
+	}
+	
+	.title-input,
+	.submit.button {
+		width: 200px;
+		display: block;
+		margin-top: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.submit.button {
+		margin-bottom: 125px;
+	}
+	
+}

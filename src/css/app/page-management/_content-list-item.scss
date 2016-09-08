@@ -1,0 +1,98 @@
+.content-list-item.component {
+	
+	
+	.primary {
+		box-sizing: border-box;
+		display: flex;
+		align-items: center;
+	}
+	
+	
+	.hamburger {
+		width: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: move;
+		cursor: grab;
+		
+		.lines {
+			.line {
+				height: 1px;
+				width: 10px;
+				margin: 2px;
+				background-color: $alto;
+			}
+		}
+		
+	}
+	
+	.icon {
+		margin: 0;
+		width: 28px;
+		background-size: 20px auto;
+		background-position: left center;
+		background-repeat: no-repeat;
+		height: 50px;
+	}
+	
+	&.page .icon {
+		background-image: url('../img/page.svg');
+	}
+	
+	&.gallery .icon {
+		background-image: url('../img/gallery.svg');
+	}
+	
+	&.link .icon {
+		background-image: url('../img/link.svg');
+	}
+	
+	.title {
+		flex: 1;
+		font-size: 14px;
+		font-weight: 500;
+		color: $mine-shaft--light;
+		margin: 0;
+	}
+	
+	.title,
+	.icon {
+		transition: opacity 0.15s linear;
+	}
+	
+	.toggle.button {
+		margin-left: auto;
+	}
+	
+	.nested-list-items {
+		padding: 0 0 0 30px;
+		margin: 0 0 0 0;
+		border-top: 1px dashed $gallery;
+		list-style: none;
+	}
+	
+	// Items WITHIN an item
+	.content-list-item.component {
+		
+		
+		
+		.title {
+			font-size: 13px;
+		}
+		
+		// This is pretty much what defines the min-heights
+		.icon {
+			height: 20px;
+		}
+	}
+	
+	
+	// Inactive state 
+	&:not(.active) {
+		.title,
+		.icon {
+			opacity: 0.3;
+		}
+	}
+}
