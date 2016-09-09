@@ -4,7 +4,6 @@ var browserify = require('browserify');
 var gulp = require('gulp');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
-var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 var connect = require('gulp-connect');
 var babelify = require('babelify');
