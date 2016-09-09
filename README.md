@@ -1,7 +1,7 @@
 # Modal Example
 
 ### Getting started
-`npm install`
+`npm install` and then install `gulp` globally: `npm install gulp`
 
 ### Running
 `sudo gulp server`
